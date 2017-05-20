@@ -1,4 +1,146 @@
 h2 {color:green;}
 body {
-    background-color: lightblue;
+    margin: 0;
+    padding: 0;
+    font-family: arial, helvetica, sans-serif;
+
 }
+.container {
+    width: 50em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav
+{
+    padding: 1em 2em;
+    background: green;
+}
+
+.intro {
+    font-size: 1.2em;
+    color: gray;
+}
+
+#nav {
+
+}
+
+.header, .footer {
+    padding: 2em;
+    color: white;
+    background: black;
+}
+
+/* * {
+    margin: 0;
+    padding:0;
+}*/
+
+.nav li{
+    display: inline;
+    margin-right: 1em;
+}
+
+.nav li a {
+    color: white;
+}
+
+/* Direct Child Selector
+    div > a
+    This is looking for an "a" element that is a DIRECT child of a div. It won't work unless "a" is the
+    direct child of div.
+*/
+
+main > h2 {
+
+}
+
+.nav li > a{
+    text-decoration: none;
+}
+
+/* Adjacent Sibling Selectors
+h2 + h3 {  this is looking for any h3 that comes directly after an h2 AND they are siblings, which means they come from the same parent.
+}
+*/
+
+/*
+a:link - any "a" that is link.
+a:visited - any element that has been visited
+a:focus - any element that is currently in focus (the user has tabbed to that element and it's selected)
+a:hover - any "a" element that the user has hovered over with the mouse and it's currently in hover-state
+a:active - the user has interactived with this element.
+
+
+*/
+
+a:link {
+    color:green;
+}
+
+h1 {
+    font-size: 2em;
+}
+.title {
+    background-color: red;
+}
+
+h1 + h2 {
+    margin-top: 2em;
+    color: cornflowerblue;
+}
+
+.container {
+    width: 50em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav {
+    padding: 3em;
+    background: green;
+}
+
+.nav li{
+    display: inline;
+    padding: 2em;
+}
+
+.nav li a {
+    color: white;
+    text-decoration: none;
+}
+.heading, .footer {
+    padding: 2em;
+    color: white;
+    background: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

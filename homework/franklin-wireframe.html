@@ -6,55 +6,67 @@
     <title>Franklin Wireframe Weather Site | CIT 230 class | Frontend developement</title>
     <meta name="description" content="short description of the site">
     <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="franklin_styles.css">
+
+
+
 </head>
 
 <body>
-    <header>
-        <h1>&#9856; &#9861; Franklin Weather Site</h1>
-        <h2>Local Weather</h2>
-        <nav>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Franklin</a></li>
-                <li><a href="">Greenville</a></li>
-                <li><a href="">Springfield</a></li>
-                <li><a href="">Search</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <div class="current-conditions">
-            <h1>Current Conditions</h1>
-            <h2>Wind</h2>
-            <p>1 - 5 MPH Southwest</p>
-            <h2>Precipitation</h2>
-            <p>0 in</p>
-        </div>
-        <div class="location-temperature">
-            <img src="http://lorempixel.com/400/200" alt="Background">
-            <img src="http://lorempixel.com/400/200" alt="Franklin">
-            <h1>Franklin, ID</h1>
-            <h2>17</h2>
-            <p>&#9728; 17/3
-            </p>
-            <h3>Sunny</h3>
-        </div>
-        <div class="hourly-forecast">
-            <img src="http://lorempixel.com/400/200" alt="Forecast">
-            <h1>Hourly Forecast</h1>
-            <p>8:00 AM : 67<br> 8:00 AM : 67<br> 8:00 AM : 67</p>
-        </div>
-    </main>
-
-    <footer>
+    <div class="container">
+            <header>
+                <div class="title">
+                    <h1><span>&#9856;</span><span>&#9861;</span> Feeling Lucky?</h1>
+                    <h1>Local Weather</h1>
+                </div>
+                <div class="nav">
+                    <nav                    >
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Franklin</a></li>
+                            <li><a href="">Greenville</a></li>
+                            <li><a href="">Springfield</a></li>
+                            <li><a href="">Search</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        <main>
+            <section class="overview">
+                <h1>Franklin, ID</h1>
+                <h2>17</h2>
+                <div class="currentconition">
+                    <p>&#9728;</p>
+                    <p>17/3
+                    </p>
+                </div>
+                <h3>Sunny</h3>
+            </section>
+            <section class="current-conditions">
+                <h1>Current Conditions</h1>
+                <p>Wind: 1 - 5 MPH <br>Southwest</p>
+                <p>Precipitation: 0 in</p>
+            </section>
+            <section class="hourly-forecast">
+                <h1>Hourly Forecast</h1>
+                <ul>
+                    <li>8:00 AM : 67</li>
+                    <li>8:00 AM : 67</li>
+                    <li>8:00 AM : 67</li>
+                </ul>
+            </section>
+        </main>
         <div class="footer">
-            <ul>
-                <li>&copy;2017 Cory Zwahlen</li>
-                <li><a href="../index.html">Link to Homepage</a></li>
-            </ul>
+            <footer>
+                <section class="footer">
+                    <ul>
+                        <li>&copy;2017 Cory Zwahlen</li>
+                        <li><a href="../index.html">Link to Homepage</a></li>
+                    </ul>
+                </section>
+            </footer>
         </div>
-    </footer>
+    </div>
 </body>
 
 </html>

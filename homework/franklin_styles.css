@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main,
+figcaption,
+figure {
+    display: block;
+}
+body {
+    align-items: center;
+    margin: 0;
+    padding: inherit;
+    background-color: salmon;
+}
+/* Page flow - Horizontal
+Local Weather to the right
+Franklin, ID to Middle - colored box behind
+Box around temp & high/low
+Img background to back
+Smooth box around
+    Current Conditions
+    Wind: 1-5 MPH
+            Southwest
+    Precipitation: 0 in
+Colored box - behind Copyright & link to Home
+Add space on bottom so Nav isn't hidden
+Nav bar - centered*/
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    padding: 1em;
+
+}
+nav li {
+    list-style-type: none;
+    padding:1em;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    bottom: 200px;
+    position: fixed;
+    right: 225px;
+}
+.title h1 + h1 {
+    text-align: right;
+    margin-top: -7em;
+}
+
+section ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    padding-bottom: 10%;
+}
+
+.currentconition {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.hourly-forecast {
+    visibility: hidden;
+}
+.container {
+    display: flex;
+    flex-flow:column nowrap;
+    align-items: center;
+    margin: auto;
+}
+
+nav {
+    align-self: flex-end;
+}
+
+.overview h2{
+    display: flex;
+    padding-left: 2em;
+}
+
+
+
