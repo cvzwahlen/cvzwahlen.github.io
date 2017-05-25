@@ -1,0 +1,28 @@
+body {
+    background-color: #96A8C8;
+}
+#content {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+main, footer, header > * {
+    background-color: white;
+    display: flex;
+    border-color: 1px solid black;
+}
+
+header {
+    display: flex;
+
+}
+
+nav {
+    margin: 1em;
+}
+
+nav ul{
+    padding: 0;
+    list-style-type: none;
+}

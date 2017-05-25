@@ -1,0 +1,39 @@
+.topnav nav ul {
+    display:flex;
+    justify-content: space-around;
+}
+
+.topnav nav ul li {
+    list-style: none;
+}
+.topnav {
+    display:flex;
+    flex-flow: column wrap;
+}
+
+.topnav img {
+    align-self: center;
+}
+.imagescroller ul {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.imagescroller ul li {
+    list-style: none;
+}
+.onhover {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 90%;
+}
+
+.footer div {
+
+}

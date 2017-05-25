@@ -37,38 +37,31 @@ main {
     flex-flow: column nowrap;
     align-items: center;
 }
-nav ul{
-    display: flex;
-    align-items: center;
-    padding: 1em;
-
-}
-nav li {
+ul li{
     list-style-type: none;
-    padding:1em;
 }
 
 
-nav {
+nav ul{
+    text-decoration: none;
     display: flex;
+    justify-content: space-between;
+    flex-direction : row;
     align-items: center;
-    bottom: 200px;
+    bottom: 0px;
     position: fixed;
-    right: 225px;
 }
+
+
+
 .title h1 + h1 {
     text-align: right;
     margin-top: -7em;
 }
-
-section ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
 
 footer {
-    padding-bottom: 10%;
+    padding-bottom: 10px;
 }
 
 .currentconition {
@@ -85,10 +78,6 @@ footer {
     flex-flow:column nowrap;
     align-items: center;
     margin: auto;
-}
-
-nav {
-    align-self: flex-end;
 }
 
 .overview h2{
