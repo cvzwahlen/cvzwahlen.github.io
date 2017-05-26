@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
 * {
     box-sizing: border-box;
+
 }
 article,
 aside,
@@ -11,26 +13,12 @@ main,
 figcaption,
 figure {
     display: block;
+    width: 100%
 }
 body {
     align-items: center;
-    margin: 0;
-    padding: inherit;
-    background-color: salmon;
+
 }
-/* Page flow - Horizontal
-Local Weather to the right
-Franklin, ID to Middle - colored box behind
-Box around temp & high/low
-Img background to back
-Smooth box around
-    Current Conditions
-    Wind: 1-5 MPH
-            Southwest
-    Precipitation: 0 in
-Colored box - behind Copyright & link to Home
-Add space on bottom so Nav isn't hidden
-Nav bar - centered*/
 
 main {
     display: flex;
@@ -39,35 +27,34 @@ main {
 }
 ul li{
     list-style-type: none;
+
 }
 
 
 nav ul{
+
     text-decoration: none;
     display: flex;
     justify-content: space-between;
-    flex-direction : row;
     align-items: center;
     bottom: 0px;
-    position: fixed;
+   /* position: fixed;*/
 }
 
 
 
-.title h1 + h1 {
+.title  h1 + h1 {
     text-align: right;
-    margin-top: -7em;
-}
 }
 
 footer {
-    padding-bottom: 10px;
+    padding-bottom: 4.4em;
 }
 
 .currentconition {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .hourly-forecast {
@@ -77,13 +64,112 @@ footer {
     display: flex;
     flex-flow:column nowrap;
     align-items: center;
-    margin: auto;
 }
 
 .overview h2{
     display: flex;
-    padding-left: 2em;
+}
+main {
+    background-image: url("../img/sunny-winter.jpg");
+    background-size: cover;
+}
+body {
+    font-family: Helvetica;
+    font-size: 20px;
+    margin:0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Ubuntu", fantasy, sans-serif;
+
+}
+/*header, footer, nav ul{
+    background-color: lightgray;
+    margin: auto;
+    border: 1px solid;
+    border-radius: 5px;*/
+}
+nav a:link {
+    text-decoration: none;
+    color: #47556F;
 }
 
+a:visited {
+    color:green;
+}
+nav a:hover {
+    background-color: yellow;
+}
+nav a:active {
+    color: yellow;
+}
+.current-conditions {
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 5px;
+}
+h1 span {
+    transform: rotate(25deg);
+    display: inline-block;
+}
+.overview h3, .overview p {
+    color: black;
+}
+.overview h1{
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 5px;
+}
 
+.currentconition{
+    background-color: rgba(200,200,200,.6);
+    margin: auto;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.footer {
+    width: 100%;
+    background-color: lightgray;
+    margin: auto;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.footer ul li{
+    align-items: center;
+}
 
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding-right: 5px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.navbar {
+    display: flex;
+    flex-grow: 50%;
+    flex-basis: auto;
+    padding:none;
+    border: none;
+    overflow: hidden;
+    background-color: salmon;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+header{
+    margin: 0;
+}
+.middlebox h2{
+    justify-content: center;
+    font-size: 75px
+}
+.title h1 {
+    margin:0;
+    background-color: lightblue
+}
