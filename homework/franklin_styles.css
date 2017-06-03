@@ -43,8 +43,8 @@ nav ul{
 
 
 
-.title  h1 + h1 {
-    text-align: right;
+.title h1 {
+    align-items: flex-end;
 }
 
 footer {
@@ -162,14 +162,73 @@ h1 span {
     bottom: 0;
     width: 100%;
 }
-header{
-    margin: 0;
-}
+
 .middlebox h2{
     justify-content: center;
     font-size: 75px
 }
 .title h1 {
-    margin:0;
-    background-color: lightblue
+    align-self: flex-end;
+    background-color: lightblue;
+        margin:0;
 }
+
+@media screen and (min-width: 34em) {
+    .title h1:nth-child(2) {
+        width: 20em;
+        align-self: stretch;
+    }
+    .navbar {position: static;}
+    .hourly-forecast {
+        visibility: visible;
+}
+    main {
+        flex-direction: row;
+        align-items: stretch;
+
+    }
+    main > section {
+        flex: 1 0 30%;
+    }
+    .overview h1, .currentconition, .current-conditions {
+        margin: 0;
+        border: none;
+        border-radius: 0px;}
+    .current-conditions{
+        background:none;
+        order:-1;
+    }
+    .overview {
+        background-image: url("../img/sunny-winter.jpg");
+        background-size: cover;
+    }
+    main {
+        background-image: none;
+        background-color: slategray
+    }
+    .current-conditions, .hourly-forecast{
+        max-height: 12em;
+        overflow: auto;
+    }
+    .hourly-forecast ul {
+        list-style-type: none;
+        padding-left: 0;
+        max-height: 12em;
+        overflow: auto;
+    }
+    .hourly-forecast ul li {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    body {
+        max-width: 800px;
+        margin: auto;
+    }
+
+
+}
+
+
+
+
