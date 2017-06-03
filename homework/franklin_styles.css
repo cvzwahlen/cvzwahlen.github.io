@@ -82,12 +82,6 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Ubuntu", fantasy, sans-serif;
 
 }
-/*header, footer, nav ul{
-    background-color: lightgray;
-    margin: auto;
-    border: 1px solid;
-    border-radius: 5px;*/
-}
 nav a:link {
     text-decoration: none;
     color: #47556F;
@@ -152,9 +146,8 @@ h1 span {
 }
 .navbar {
     display: flex;
-    flex-grow: 50%;
     flex-basis: auto;
-    padding:none;
+    padding:0px;
     border: none;
     overflow: hidden;
     background-color: salmon;
