@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+}
+
+ul.topnav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+ul.topnav li {
+    justify-content: center;
+    width: 100%;
+    display: flex;
+}
+
+ul.topnav li a {
+    align-items: center;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li:first-of-type {
+    background-color: #4CAF50;
+    align-self: center;
+    width: 100%;
+}
+
+ul.topnav li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.homelink li {
+    list-style-type: none;
+}
+
+@media screen and (min-width: 450px) {
+    ul.topnav {
+        display: flex;
+        flex-flow: row;
+    }
+}
