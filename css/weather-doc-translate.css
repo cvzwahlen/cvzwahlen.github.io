@@ -1,7 +1,10 @@
-.fonts h1, .fonts h2, .fonts p {
+.fonts h1:nth-child(1) {
     font-family: 'Amatic SC', cursive;
-    font-size:  200%;
-
+    font-size:  250%;
+}
+.fonts h1:nth-child(2), .fonts p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 200%;
 }
 
 h1, h2, h3 {
