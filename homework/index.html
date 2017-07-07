@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset='utf-8'>
+    <title>Greenville Weather Site | CIT 230 class | Frontend Developement</title>
+    <meta name="description" content="short description of the site">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/weather-homepage-css.css">
+</head>
+    <!-- *********************************************
+* Who Did You Collaborate With On This Assessment?
+* 1. Cory Zwahlen
+* 2. Breena
+* 3.Casey
+* 4. Lynnette
+* 5.
+* ******************************************** -->
+
+<body>
+
+    <div class="container">
+        <nav>
+
+            <ul>
+                <li class="mynav"><a href="index.html">Home</a></li>
+                <li class="mynav"><a href="/homework/franklin-wireframe.html">Franklin</a></li>
+                <li class="mynav"><a href="/homework/greenville-styled.html">Greenville</a></li>
+                <li class="mynav"><a href="">Springfield</a></li>
+                <li class="mynav"><a href="">Search</a></li>
+            </ul>
+
+        </nav>
+
+        <header>
+            <div class="title">
+                <h1 id="currentLocation"></h1>
+<!--
+                <h2>What's The Weather Like?</h2>
+                <h3>I Don't Know: I'm Too Busy GAMING</h3>
+-->
+            </div>
+        </header>
+        <main>
+
+            <div class="flex-container">
+                <div class="flex-parent">
+                    <div class="flex-child">
+                        <h1 id="temperature"></h1>
+                    </div>
+                    <div class="flex-child">
+                        <div class="high-low">
+                            <h1 id="high"></h1>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-parent">
+                    <div class="flex-child">
+                        <div class="arrange">
+
+                            <h1>Current Conditions</h1>
+                            <p id="wind"></p>
+                            <p id="precipitation"></p>
+                        </div>
+
+                    </div>
+                    <div class="flex-child" id="hourly">
+                        <div class="arrange">
+
+                            <h1 id="feelsLike"></h1>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </main>
+        <footer>
+                <ul>
+                    <li>&copy;2017 Cory Zwahlen <a href="../index.html">Link to Homepage</a></li>
+                </ul>
+
+        </footer>
+        <script src="/weather/weather-hompage.js"></script>
+    </div>
+</body>
+
+</html>
