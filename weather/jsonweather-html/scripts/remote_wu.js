@@ -35,11 +35,12 @@
         var url = "http://api.wunderground.com/api/0e7a768163a0e592/geolookup/conditions/q/" +lat+ "," + long +".json"; //change this to the correct URL for wunderground
         getJSON(url).then(function (data) {
             console.log(data);
-
-            document.getElementById("currentTemp").innerHTML=data.current_observation.temp_f;
+            document.getElementById("cityDisplay").innerHTML=data.location.city + ", " + data.location.state;
             document.getElementById("summary").innerHTML=data.current_observation.weather;
-            document.getElementById("add1").innerHTML=data.current_observation.relative_humidity;
-            document.getElementById("add2").innerHTML=data.current_observation.wind_string;
+            document.getElementById("currentTemp").innerHTML=data.current_observation.temp_f+ "&#8457";
+            document.getElementById("summary").innerHTML=data.current_observation.weather;
+            document.getElementById("add1").innerHTML="Feels like: " + data.current_observation.feelslike_f + "&#8457";
+            document.getElementById("add2").innerHTML="Wind: " + data.current_observation.wind_string;
             document.getElementById("add3").innerHTML=data.current_observation.local_time_rfc822;
 
             //add the code necessary here to update the page with all of the correct data points.
