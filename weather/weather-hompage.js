@@ -46,7 +46,7 @@
             //add the code necessary here to update the page with all of the correct data points.
 
             //this line will cause the Loading message to fade away.
-//            document.getElementById("cover").classList.add('fadeout');
+            document.getElementById("cover").classList.add('fadeout');
 
         });
 
