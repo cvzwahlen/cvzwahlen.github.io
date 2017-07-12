@@ -8,40 +8,34 @@
 
 }
 
-
-.scroller h1 {
-    text-align: center;
-    font-family: 'Tangerine', cursive;
-    font-size: 300%;
-    margin-bottom: 0;
+.banner {
+    width:100%;
 }
 
 
+#leftbanner, #rightbanner {
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+}
 
 .flex-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0;
-    justify-content: space-around
+    justify-content: space-around;
 }
 nav {
     width: 100%;
 
 }
-#family {
-    width: 100%;
-}
 
-#fancy-underline {
-    display: block;
-    margin: 0 auto;
-}
 
 .flex-parent {
     width : 100%;
     height: auto;
-    margin: 1em;
+    margin: 2em;
 }
 
 .flex-parent h1 {
@@ -52,6 +46,8 @@ nav {
 nav ul {
     display: flex;
     list-style-type: none;
+    width: 100%;
+    border-left: 0px;
 }
 
 
@@ -69,8 +65,7 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: crimson;
-}
+    background-color: crimson; }
 
 ul li {
     justify-content: center;
@@ -96,9 +91,19 @@ ul li:first-of-type {
 }
 
 
-ul li a:hover:not(.active) {
-    background-color: #111;
+.pinknav:hover:not(.active) {
+    background-color: #F16A85;
+    color: white;
 }
+nav li:hover:not(.active) {
+    background-color: #F16A85;
+    color: white;
+}
+
+#homenav:hover:not(.active) {
+    color: white;
+}
+
 .home a {
     color: crimson;
 }
@@ -112,10 +117,47 @@ li {
 
 
 
+.main-img {
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.flex-parent:hover .main-img {
+    opacity: 0.6;
+}
+
 
 @media screen and (min-width: 450px) {
+
     ul {
         display: flex;
         flex-flow: row;
     }
-}
+
+    .scroller{
+        display: flex;
+        height: 24em;
+    }
+
+    #leftbanner, #rightbanner {
+        visibility: visible;
+        height: auto;
+        width:auto;
+    }
+    .flex-parent{
+        width:25%;
+        margin:1.5em;
+        margin-top:20px;
+    }
+    .flex-container {
+        justify-content: space-around;
+    }
+    ul li {
+        display: flex;
+        justify-content: center
+    }
+
+
+
+
