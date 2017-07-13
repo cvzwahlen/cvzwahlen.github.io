@@ -1,8 +1,4 @@
-.container {
-
-}
-
-.main-img {
+.main-img, .small-img {
     max-width:100%;
     max-height:100%;
 
@@ -107,13 +103,16 @@ li {
 
 
 
-.main-img {
+.main-img, .small-img {
     opacity: 1;
     transition: .5s ease;
     backface-visibility: hidden;
 }
 
 .flex-parent:hover .main-img {
+    opacity: 0.6;
+}
+.flex-parent:hover .small-img {
     opacity: 0.6;
 }
 
@@ -133,6 +132,18 @@ li {
 
 footer {
     margin: 10px;
+}
+
+
+.main-img {
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+}
+.small-img {
+    visibility: visible;
+    width: auto;
+    height: auto;
 }
 
 
@@ -170,5 +181,17 @@ footer {
         max-width: 2500px;
     }
 
+    .small-img {
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
+    }
 
+    .main-img {
+        visibility: visible;
+        width: auto;
+        height: auto;
+    }
+
+}
 
